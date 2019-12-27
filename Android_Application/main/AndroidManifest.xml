@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hyun.myapplication">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Extreme"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".NpsActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".TpotActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".JoinActivity" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".FriendsActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <activity
+            android:name=".DbSelActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".DbfriendsActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".DbActivity" />
+        <activity android:name=".Db2Activity" />
+        <activity android:name=".Db3Activity" />
+        <activity android:name=".Db4Activity" />
+
+        <activity android:name=".PushActivity" />
+        <activity android:name=".PullActivity" />
+        <activity android:name=".DipsActivity" />
+        <activity android:name=".ArmActivity" />
+
+        <activity android:name=".ResultActivity" />
+    </application>
+</manifest>

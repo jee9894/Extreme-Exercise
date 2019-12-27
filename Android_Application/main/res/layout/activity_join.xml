@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/button_white"
+        android:onClick="onJoinButtonClicked"
+        android:text="등록"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinPwd" />
+
+    <EditText
+        android:id="@+id/joinId"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:hint="아이디"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/joinPwd"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinId"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
